@@ -1,27 +1,24 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import Footer from './components/Footer';
+import * as React from 'react';
+import { View, Text } from 'react-native';
 
-const App = () => {
+import LittleLemonHeader from './components/LittleLemonHeader';
+import LittleLemonFooter from './components/LittleLemonFooter';
+import WelcomeScreen from "./WelcomeScreen";
+
+export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Welcome to Little Lemon!</Text>
-      <Footer />
-    </View>
+    <>
+      <View
+        style={{
+          flex: 1,
+          backgroundColor: '#495E57',
+        }}>
+        <LittleLemonHeader />
+        <WelcomeScreen />
+      </View>
+      <View style={{ backgroundColor: '#495E57' }}>
+        <LittleLemonFooter />
+      </View>
+    </>
   );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    paddingTop: 60,
-    paddingHorizontal: 20,
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-});
-
-export default App;
+}

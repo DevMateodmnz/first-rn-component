@@ -2,7 +2,7 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const Footer = () => {
+const LittleLemonFooter = () => {
   return (
     <View style={styles.footer}>
       <Text style={styles.footerText}>All rights reserved by Little Lemon, 2022</Text>
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Footer;
+export default LittleLemonFooter;
