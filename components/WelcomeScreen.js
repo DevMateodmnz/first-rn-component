@@ -3,7 +3,7 @@ import { ScrollView, Text, StyleSheet } from 'react-native';
 
 export default function WelcomeScreen() {
   return (
-    <ScrollView indicatorStyle="white" style={styles.container}>
+    <ScrollView style={styles.container}>
       <Text style={styles.headerText}>Welcome to Little Lemon</Text>
       <Text style={styles.regularText}>
         Little Lemon is a charming neighborhood bistro that serves simple food
@@ -17,6 +17,7 @@ export default function WelcomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#333333',
   },
   headerText: {
     padding: 40,
