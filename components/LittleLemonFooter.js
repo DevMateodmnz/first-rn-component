@@ -1,26 +1,25 @@
-// components/Footer.js
-import React from 'react';
+import * as React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-const LittleLemonFooter = () => {
+export default function LittleLemonFooter() {
   return (
-    <View style={styles.footer}>
-      <Text style={styles.footerText}>All rights reserved by Little Lemon, 2022</Text>
+    <View style={styles.container}>
+      <Text style={styles.footerText}>
+        All rights reserved by Little Lemon, 2022{' '}
+      </Text>
     </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
-  footer: {
-    backgroundColor: '#EDEFEE',
-    padding: 15,
-    alignItems: 'center',
-    marginTop: 'auto',
+  container: {
+    backgroundColor: '#EE9972',
+    marginBottom: 20,
   },
   footerText: {
-    fontSize: 14,
-    color: '#333333',
+    fontSize: 18,
+    color: 'black',
+    textAlign: 'center',
+    fontStyle: 'italic',
   },
 });
-
-export default LittleLemonFooter;
